@@ -53,7 +53,7 @@ app.listen(PORT, () => {
   console.log(`Server-app running on port ${PORT}`);
 });
 
-<<<<<<< HEAD
+
 mongoose.connection.once('open', () => console.log('Now connected to MongoDB Atlas'));
 
 // [SECTION] Backend Routes
