@@ -1,4 +1,3 @@
-const db = require('./database/db.js');
 const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
