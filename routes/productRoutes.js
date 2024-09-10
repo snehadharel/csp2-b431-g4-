@@ -1,7 +1,7 @@
 // [SECTION] Dependencies and Modules
 const express = require("express");
 const productController = require("../controllers/productController");
-const { protect, admin } = require("../authGuard");
+const { protect, admin } = require("../auth");
 
 // [SECTION] Routing Component
 const router = express.Router();
