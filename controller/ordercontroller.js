@@ -1,6 +1,6 @@
 const asyncHandler = require("express-async-handler");
-const Order = require("../models/Order");
-const Cart = require("../models/Cart");
+const Order = require("../models/order");
+const Cart = require("../models/cart");
 
 // @desc    Create a new order
 // @route   POST /orders/checkout
