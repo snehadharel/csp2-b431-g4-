@@ -2,7 +2,7 @@ const passport = require("passport");
 
 // Render the login page or redirect to Google login
 const googleLogin = (req, res) => {
-  res.redirect("/users/google");
+  res.redirect("/user/google");
 };
 
 // Handle Google callback after successful authentication
