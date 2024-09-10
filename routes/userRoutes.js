@@ -1,6 +1,6 @@
 // [SECTION] Dependencies and Modules
 const express = require("express");
-const userController = require("../controllers/userController");
+const userController = require("../controller/usercontroller");
 const { protect } = require("../auth");
 const { admin } = require("../auth");
 
