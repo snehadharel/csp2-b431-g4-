@@ -3,7 +3,7 @@ const passport = require("passport");
 const {
   googleLogin,
   googleCallback,
-} = require("../controller/authcontroller");
+} = require("../controller/authController");
 
 const router = express.Router();
 
