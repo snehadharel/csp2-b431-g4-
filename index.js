@@ -43,7 +43,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // Routes
-// app.use("/b2/users", authRoutes);
+// app.use("/b4/users", authRoutes);
 
 // 3. Defining the port
 // const PORT = process.env.PORT; // 4444;
