@@ -1,13 +1,13 @@
 const asyncHandler = require("express-async-handler");
-const Order = require("../models/Order");
-const Cart = require("../models/Cart");
+const Order = require("../models/order");
+const Cart = require("../models/cart");
 
 // @desc    Create a new order
 // @route   POST /orders/checkout
 // @access  Private
 const createOrder = asyncHandler(async (req, res) => {
   try {
-    const cart = await Cart.findOne({ userId: req.user._id }).populate(
+    const cart = await cart.findOne({ userId: req.user._id }).populate(
       "cartItems.productId"
     );
 
@@ -15,7 +15,7 @@ const createOrder = asyncHandler(async (req, res) => {
       return res.status(400).json({ error: "No Items to Checkout" });
     }
 
-    const order = new Order({
+    const order = new order({
       userId: req.user._id,
       orderItems: cart.cartItems,
       totalPrice: cart.totalPrice,
