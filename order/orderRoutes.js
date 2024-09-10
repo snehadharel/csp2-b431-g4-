@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const orderController = require("../controller/ordercontroller");
+const ordercontroller = require("../controller/ordercontroller");
 const { protect, admin } = require("../auth");
 
 // Route to get user's orders
