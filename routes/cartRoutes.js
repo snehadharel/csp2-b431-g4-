@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const cartController = require('../controllers/cartController');
-const { protect } = require('../authGuard');
+const { protect } = require('../auth');
 
 
 // Route to add to cart
