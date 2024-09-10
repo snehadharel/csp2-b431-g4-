@@ -4,7 +4,7 @@ orderRoutes.js
 const express = require("express");
 const router = express.Router();
 const orderController = require("../controllers/orderController");
-const { protect, admin } = require("../authGuard");
+const { protect, admin } = require("../auth");
 
 // Route to get user's orders
 router.get("/my-orders", protect, orderController.getUserOrders);
