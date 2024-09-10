@@ -1,8 +1,8 @@
 // [SECTION] Dependencies and Modules
 const express = require("express");
 const userController = require("../controllers/userController");
-const { protect } = require("../authGuard");
-const { admin } = require("../authGuard");
+const { protect } = require("../auth");
+const { admin } = require("../auth");
 
 // [SECTION] Routing Component
 const router = express.Router();
